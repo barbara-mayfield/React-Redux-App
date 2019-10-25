@@ -2,7 +2,7 @@ import {
     GET_JOKE_START,
     GET_JOKE_SUCCESS,
     GET_JOKE_ERROR 
-} from '../actions/joke';
+} from '../actions/index';
 
 export const initialState = {
     joke: null,

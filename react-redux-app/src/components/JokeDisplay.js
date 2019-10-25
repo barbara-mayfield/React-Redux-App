@@ -1,13 +1,10 @@
 import React from 'react'
-import { JokeButton } from './JokeButton'
 
-
-export default function JokeDisplay() {
+export default function JokeDisplay(props) {
+    console.log(props, "<- Jokedisp props")
     return (
         <div className="display">
-        <div coassName="joke"><p>Joke Setup Placeholder</p>
-        <p>Joke Execution Placeholder</p></div>
-        <div><JokeButton /></div>
+        <div className="joke"><p>{props.joke}</p></div>
         </div>
     )
 }

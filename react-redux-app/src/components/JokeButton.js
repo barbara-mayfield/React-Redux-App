@@ -1,9 +1,11 @@
 import React from 'react'
 
-export const JokeButton = () => {
+const JokeButton = (props) => {
     return (
         <div>
-            <button>New Joke</button>
+            <button onClick={() => props.handleClick}>New Joke</button>
         </div>
     )
 }
+
+export default JokeButton
